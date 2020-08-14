@@ -17,7 +17,7 @@ class Parameter;
 class FunctionDefinition;
 
 /**
- * Function represents a C++ function or class method
+ * \brief Function represents a C++ function or class method
  */
 class Function : public Element {
 public:
