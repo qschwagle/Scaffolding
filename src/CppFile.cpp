@@ -5,12 +5,19 @@
 #include<fstream>
 #include<iostream>
 
+/**
+ * add an element to the file
+ * \param element element to be added
+ */
 void CppFile::AddElement(std::shared_ptr<Element> element)
 {
     mElements.push_back(element);
 }
 
 
+/**
+ * processes elements and writes it to the file
+ */
 void CppFile::Write(void)
 {
     std::fstream out;

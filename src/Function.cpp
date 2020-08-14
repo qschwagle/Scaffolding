@@ -3,12 +3,20 @@
 #include "Parameter.hpp"
 #include "FunctionDefinition.hpp"
 
+/**
+ * adds a parameter to the function parameters
+ * \param param parameter to be added
+ */
 void Function::AddParameter(std::shared_ptr<Parameter> param)
 {
     mParameters.push_back(param);
 }
 
-
+/**
+ * writes file to the out stream using spaces for indentation
+ * \param out output stream
+ * \param spaces indentation
+ */
 void Function::Write(std::ostream& out, const std::string& spaces)
 {
     out << spaces << mRetType << " " << mId << "(";

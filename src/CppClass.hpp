@@ -7,7 +7,6 @@
 
 #include "Element.hpp"
 
-
 class CppClass : public Element {
 public:
     CppClass(std::string className): mName{className} {}
